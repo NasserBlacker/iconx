@@ -1,3 +1,4 @@
+// see https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/theme_color
 {
   "name": "Iconx",
   "short_name": "Iconx",
@@ -16,12 +17,17 @@
   "id": "/?homescreen=1",
   "start_url": "/?homescreen=1",
 
-  "theme_color": "#11111b",
-  "background_color": "#11111b",
+  "theme_color": "#e9ecef",
+  "background_color": "#e9ecef",
 
+  // see https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display
   "display": "fullscreen",
-  "display_override": ["window-controls-overlay"],
+
+  // see https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/how-to/window-controls-overlay
+  "display_override": ["fullscreen"],
   "prefer_related_applications": false,
+
+  "orientation": "any",
 
   "protocol_handlers": [
     {
@@ -130,8 +136,11 @@
     {
       "action": "/",
       "accept": {
-        "text/plain": [".txt", ".md", ".html", ".css", ".js"],
-        "text/markdown": [".md"]
+        "text/css": [".css"],
+        "text/html": [".html"],
+        "text/javascript": [".js"],
+        "text/markdown": [".md"],
+        "text/plain": [".txt"]
       }
     }
   ]
