@@ -6,7 +6,7 @@
   const filesToCache = [
     "/",
     "/index.html",
-    "/manifest.json",
+    "/manifest.webmanifest",
 
     "/styles/index.css",
     "/styles/fonts.css",

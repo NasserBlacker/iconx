@@ -21,10 +21,10 @@
   "background_color": "#e9ecef",
 
   // see https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display
-  "display": "fullscreen",
+  "display": "standalone",
 
   // see https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/how-to/window-controls-overlay
-  "display_override": ["fullscreen"],
+  "display_override": ["standalone", "fullscreen", "minimal-ui", "browser"],
   "prefer_related_applications": false,
 
   "orientation": "any",
