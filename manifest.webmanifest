@@ -2,6 +2,7 @@
 {
   "name": "Iconx",
   "short_name": "Iconx",
+  "description": "Icon display size testing across different devices, screen sizes, and browsers.",
 
   "categories": [
     "productivity",
@@ -11,9 +12,9 @@
     "photo",
     "entertainment"
   ],
-  "description": "Icon display size testing across different devices, screen sizes, and browsers.",
 
   "scope": "/",
+  "lang": "en",
   "id": "/?homescreen=1",
   "start_url": "/?homescreen=1",
 
