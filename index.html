@@ -159,7 +159,7 @@
         }
 
         if ("serviceWorker" in navigator) {
-          window.addEventListener("load", loadServiceWorker);
+          window.addEventListener("load", loadServiceWorker, { once: true });
         }
       })();
     </script>
