@@ -1,0 +1,39 @@
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .toolbar {
+    position: fixed;
+    width: env(titlebar-area-width, 100%);
+    height: env(titlebar-area-height, calc(var(--spacing) * 18));
+    left: env(titlebar-area-x, 0);
+    left: env(titlebar-area-x, 0);
+    top: env(titlebar-area-y, 0);
+
+		background-color: var(--color-gray-300);
+    width: env(titlebar-area-width, 100%);
+    app-region: drag;
+  }
+
+  .view-main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .view-main h1 {
+    font-size: 24px;
+  }
+}

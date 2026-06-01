@@ -1,0 +1,12 @@
+{
+  "name": "iconx",
+  "version": "1.0.0",
+  "description": "Icon display size testing across different devices, screen sizes, and browsers",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nasser Karinganire",
+  "license": "MIT",
+  "type": "module"
+}

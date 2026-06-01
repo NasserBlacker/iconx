@@ -1,0 +1,14 @@
+@layer fonts {
+  @font-face {
+    font-family: "Lilex";
+    font-display: block;
+    src: url("../public/fonts/Lilex.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Lilex";
+    font-style: italic;
+    font-display: block;
+    src: url("../public/fonts/Lilex-Italic.woff2") format("woff2");
+  }
+}

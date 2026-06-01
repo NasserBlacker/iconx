@@ -1,0 +1,121 @@
+@layer reset {
+	*,
+	*::after,
+	*::before,
+	*::backdrop {
+		margin: 0;
+		padding: 0;
+		border: none;
+		box-sizing: border-box;
+	}
+
+	b,
+	strong {
+		font-weight: 700;
+	}
+
+	img,
+	svg,
+	video {
+		display: block;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: inherit;
+		font-weight: inherit;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+
+	ol,
+	ul {
+		list-style: none;
+	}
+
+	img,
+	svg {
+		display: block;
+	}
+
+	img,
+	video {
+		max-width: 100%;
+		height: auto;
+	}
+
+	button,
+	input {
+		font: inherit;
+		color: inherit;
+		font-feature-settings: inherit;
+		font-variation-settings: inherit;
+		letter-spacing: inherit;
+		border-radius: 0;
+		background-color: transparent;
+		opacity: 1;
+	}
+
+	button,
+	input:where([type="button"], [type="reset"], [type="submit"]) {
+		appearance: button;
+	}
+
+	::placeholder {
+		opacity: 1;
+	}
+
+	:-moz-focusring {
+		outline: auto;
+	}
+
+	:-webkit-autofill,
+	:-webkit-autofill:hover,
+	:-webkit-autofill:focus {
+		box-shadow: 0 0 0 1000px var(--color-white) inset;
+		-webkit-text-fill-color: var(--color-black);
+	}
+
+	::selection {
+		background-color: var(--color-purple-400);
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	html,
+	body,
+	:host {
+		tab-size: 4;
+		line-height: 1.5;
+		font-family: var(--font-lilex);
+		font-variation-settings: normal;
+
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
+	}
+
+	body {
+		color: var(--color-black-950);
+		background-color: var(--color-white-950);
+	}
+
+	body,
+	main {
+		min-height: 100vh;
+	}
+}

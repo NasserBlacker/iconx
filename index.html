@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Core Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iconx</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Icon display size testing across different devices, screen sizes, and browsers."
+    />
+    <meta
+      name="keywords"
+      content="icon, display, size, testing, devices, screen sizes, browsers"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Nasser Karinganire" />
+
+    <!-- Branding & Theme -->
+    <meta name="application-name" content="Iconx" />
+    <meta name="apple-mobile-web-app-title" content="Iconx" />
+    <meta name="theme-color" content="#11111b" />
+    <meta name="msapplication-TileColor" content="#11111b" />
+    <meta
+      name="msapplication-TileImage"
+      content="./public/icons/msapplication-TileImage-x144.png"
+    />
+
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Iconx" />
+    <meta property="og:site_name" content="Iconx" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:description"
+      content="Icon display size testing across different devices, screen sizes, and browsers."
+    />
+    <meta property="og:image" content="./public/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Iconx" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Iconx" />
+    <meta
+      name="twitter:description"
+      content="Icon display size testing across different devices, screen sizes, and browsers."
+    />
+    <meta name="twitter:image" content="./public/images/og-image.png" />
+    <meta name="twitter:image:alt" content="Iconx" />
+    <meta name="twitter:site" content="@nasser_kari" />
+    <meta name="twitter:creator" content="@nasser_kari" />
+
+    <!-- Configuration Files -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+    <link rel="sitemap" href="./sitemap.xml" type="application/xml" />
+
+    <!-- Icons & Favicons -->
+    <link
+      rel="shortcut icon"
+      href="./public/icons/favicon-x16.ico"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./public/icons/favicon-x48.ico"
+      sizes="48x48"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./public/icons/icon-x16.png" sizes="16x16" />
+    <link rel="icon" href="./public/icons/icon-x32.png" sizes="32x32" />
+    <link rel="icon" href="./public/icons/icon-x48.png" sizes="48x48" />
+    <link rel="icon" href="./public/icons/icon-x64.png" sizes="64x64" />
+    <link rel="icon" href="./public/icons/icon-x96.png" sizes="96x96" />
+    <link
+      rel="apple-touch-icon"
+      href="./public/icons/apple-touch-icon-x76.png"
+      sizes="76x76"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./public/icons/apple-touch-icon-x120.png"
+      sizes="120x120"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./public/icons/apple-touch-icon-x180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="mask-icon"
+      href="./public/icons/safari-pinned-tab.svg"
+      color="#11111b"
+    />
+
+    <!-- Resource Preloading -->
+    <link
+      rel="preload"
+      href="./public/fonts/Lilex.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./public/fonts/Lilex-Italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+
+    <script defer>
+      (function () {
+        "use strict";
+
+        async function loadServiceWorker() {
+          try {
+            const registration =
+              await navigator.serviceWorker.register("./sw.js");
+
+            console.log("Service Worker registered:", registration.scope);
+          } catch (error) {
+            if (error instanceof error) {
+              console.error("Service Worker registration failed");
+            }
+
+            console.error("Service Worker registration failed");
+          }
+        }
+
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", loadServiceWorker);
+        }
+      })();
+    </script>
+    <script defer type="text/javascript" src="./javascript/script.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+    </noscript>
+    <header class="toolbar">
+      <div></div>
+    </header>
+    <main class="view-main">
+      <section>
+        <h1>Hello world</h1>
+      </section>
+    </main>
+  </body>
+</html>
