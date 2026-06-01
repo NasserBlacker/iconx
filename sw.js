@@ -32,6 +32,8 @@
     "/public/icons/icon-x96.png",
     "/public/icons/logo-x192-1.png",
     "/public/icons/logo-x192.png",
+    "/public/icons/splash-x512-1.png",
+    "/public/icons/splash-x512.png",
   ];
 
   async function handleInstall() {
