@@ -65,13 +65,20 @@
     try {
       const cached = await caches.match(event.request);
 
-      // console.log("Fetch event handled for:", event.request.url);
+      console.log("Handling fetch event for: ", event.request.url);
 
       if (cached) {
         return cached;
       }
 
-      return fetch(event.request);
+      const response = await fetch(event.request.clone());
+
+      if (response.status === 200) {
+        const cache = await caches.open(cacheName);
+        await cache.put(event.request, response.clone());
+      }
+
+      return response;
     } catch (error) {
       console.error("Fetch event failed: ", error);
 
